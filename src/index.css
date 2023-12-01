@@ -14,17 +14,18 @@
   font-family: "Martian Mono", monospace;
   font-family: "Montserrat", sans-serif;
   background: #1c1c1c;
+  
 }
-.main-container {
-  display: flex;
+/* .main-container {
+  display: flex;                      
   align-items: center;
   justify-content: center;
-}
-.right {
+} */
+/* .right {
   position: relative;
   right: 63px;
   top: 9px;
-}
+} */
 ::-webkit-scrollbar {
   display: none;
 }
@@ -53,28 +54,39 @@ ul li a{
   /* margin-top: 5rem; */
   /* border: 1px solid #eee; */
   background: #1c1c1c;
-  /* height: 600px; */
+  /* height: 526px; */
 }
 h3 {
   padding-top: 8px;
 }
 .recharts-wrapper {
   height: 169px !important;
+  width: 200px !important;
 }
-.text {
+/* .text {
   margin-left: 120px;
   top: 5px;
-}
-p {
+} */
+/* p {
   position: relative;
   right: 28px;
   font-size: 11px;
-}
+} */
 .recharts-surface {
   height: 169px !important;
+  width: 200px !important;
   /* background-color: #fff; */
 }
-.sidebar-flex {
+/* .sidebar-flex {
   position: relative;
   bottom: 38px;
+} */
+
+h3{
+  width: fit-content;
+  font-size: 12px;
 }
+  p{
+    width: fit-content;
+    font-size: 11px;
+  }

@@ -39,13 +39,13 @@ function App() {
         <div className="left">
           <div className="container">
             <h3>Energy </h3>
-            <div style={{ width: 530, height: 250 }}>
+            <div style={{ width: 964 , height: 482 }}>
               <BarChart chartData={energyChartData} />
             </div>
           </div>
           <div className="container">
             <h3>Solar Production</h3>
-            <div style={{ width: 530, height: 250 }}>
+            <div style={{ width: 964 , height: 482 }}>
               <BarChart chartData={solarData} />
             </div>
           </div>
@@ -54,7 +54,6 @@ function App() {
           <div className="sidebar">
             <div className="sidebar-flex">
               <PieNeedleChart />
-
               <SecChart />
               <SecblueChart />
             </div>

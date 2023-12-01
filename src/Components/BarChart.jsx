@@ -34,7 +34,11 @@ function BarChart({ chartData }) {
           
     }
     
-  return <Bar data={chartData}  options={options}/>;
+  return <>
+  <div className="bardata">
+   <Bar data={chartData}  options={options}/>;
+   </div>
+   </>
 
 }
 
