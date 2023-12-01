@@ -1,13 +1,12 @@
-
-import React from 'react';
-import { PieChart, Pie, Cell } from 'recharts';
+import React from "react";
+import { PieChart, Pie, Cell } from "recharts";
 
 const RADIAN = Math.PI / 180;
 const data = [
   //   { name: 'A', value: 125, color: '#0A7E29' },
   //   { name: 'B', value: 25, color: '#0A0A0A' },
-  { name: 'C', value: 125, color: '#0000ff' },
-  { name: 'B', value: 25, color: '#0A0A0A' },
+  { name: "C", value: 125, color: "#0000ff" },
+  { name: "B", value: 25, color: "#0A0A0A" },
 ];
 const cx = 150;
 const cy = 200;
@@ -76,4 +75,3 @@ const Example = () => {
 };
 
 export default Example;
-

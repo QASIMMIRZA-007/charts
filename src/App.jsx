@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 import BarChart from "./Components/BarChart";
 import { UserData, energyData } from "./Components/Data";
-import PieNeedleChart from './Components/PieNeedleChart'
-import SecChart from './Components/SecChart'
-import SecblueChart from './Components/SecblueChart'
+import PieNeedleChart from "./Components/PieNeedleChart";
+import SecChart from "./Components/SecChart";
+import SecblueChart from "./Components/SecblueChart";
 
 import GaugeCharts from "./Components/GaugeCharts";
 
@@ -53,26 +53,18 @@ function App() {
         <div className="right">
           <div className="sidebar">
             <div className="sidebar-flex">
-            <PieNeedleChart/>
-         
-            <SecChart/>
-            <SecblueChart/>
+              <PieNeedleChart />
+
+              <SecChart />
+              <SecblueChart />
             </div>
           </div>
         </div>
       </div>
-   
 
-    {/* <GaugeCharts/> */}
+      {/* <GaugeCharts/> */}
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-

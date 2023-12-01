@@ -1,32 +1,31 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-.App{
+.App {
   height: 100%;
   width: 100%;
   /* background: cornflowerblue; */
   background: #000;
   color: #fff;
-  font-family: 'IBM Plex Sans', sans-serif;
-font-family: 'Martian Mono', monospace;
-font-family: 'Montserrat', sans-serif;
-background: #1C1C1C;
-
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Martian Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+  background: #1c1c1c;
 }
-.main-container{
+.main-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.right{
+.right {
   position: relative;
   right: 63px;
   top: 9px;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 /* .App .App-header{
@@ -49,34 +48,33 @@ ul li a{
   height: 100vh;
 
 } */
-.container{
+.container {
   /* color: #fff; */
   /* margin-top: 5rem; */
   /* border: 1px solid #eee; */
-  background: #1C1C1C;
+  background: #1c1c1c;
   /* height: 600px; */
 }
-h3{
- padding-top: 8px;
+h3 {
+  padding-top: 8px;
 }
-.recharts-wrapper{
+.recharts-wrapper {
   height: 169px !important;
 }
-.text{
+.text {
   margin-left: 120px;
   top: 5px;
 }
-p{
+p {
   position: relative;
-    right: 28px;
-    font-size: 11px;
+  right: 28px;
+  font-size: 11px;
 }
-.recharts-surface{
+.recharts-surface {
   height: 169px !important;
   /* background-color: #fff; */
 }
-.sidebar-flex{
+.sidebar-flex {
   position: relative;
   bottom: 38px;
-
 }
