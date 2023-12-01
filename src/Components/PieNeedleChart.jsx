@@ -1,12 +1,12 @@
-/* eslint-disable no-shadow */
-import React, { PureComponent } from 'react';
+
+import React from 'react';
 import { PieChart, Pie, Cell } from 'recharts';
 
 const RADIAN = Math.PI / 180;
 const data = [
   { name: 'A', value: 80, color: '#B83C1D' },
   { name: 'B', value: 45, color: '#BD9500' },
-  { name: 'C', value: 25, color:'#0C7E29' },
+  { name: 'C', value: 25, color: '#0C7E29' },
 ];
 const cx = 150;
 const cy = 200;
@@ -25,7 +25,7 @@ const needle = (value, data, cx, cy, iR, oR, color) => {
   const cos = Math.cos(-RADIAN * ang);
   const r = 5;
   const x0 = cx + 5;
-  const y0 = cy + 5;  
+  const y0 = cy + 5;
   const xba = x0 + r * sin;
   const yba = y0 - r * cos;
   const xbb = x0 - r * sin;
@@ -33,16 +33,20 @@ const needle = (value, data, cx, cy, iR, oR, color) => {
   const xp = x0 + length * cos;
   const yp = y0 + length * sin;
 
-  return [  
-    <circle cx={x0} cy={y0} r={r} fill={color} stroke="none" />,
-    <path d={`M${xba} ${yba}L${xbb} ${ybb} L${xp} ${yp} L${xba} ${yba}`} stroke="#none" fill={color} />,
+  return [
+    <circle cx={x0} cy={y0} r={r} fill={color} stroke="none" key="circle" />,
+    <path
+      d={`M${xba} ${yba}L${xbb} ${ybb} L${xp} ${yp} L${xba} ${yba}`}
+      stroke="#none"
+      fill={color}
+      key="path"
+    />,
   ];
 };
 
-export default class Example extends PureComponent {
-  render() {
-    return (
-      <>
+const Example = () => {
+  return (
+    <>
       <PieChart width={400} height={200}>
         <Pie
           dataKey="value"
@@ -62,11 +66,13 @@ export default class Example extends PureComponent {
         </Pie>
         {needle(value, data, cx, cy, iR, oR, '#d0d000')}
       </PieChart>
-    <div className='text'>
-      <h3> 45.06 kWh</h3>
-      <p>consumed from the grid</p>
+      <div className="text">
+        <h3>45.06 kWh</h3>
+        <p>consumed from the grid</p>
       </div>
-      </>
-    );
-  }
-}
+    </>
+  );
+};
+
+export default Example;
+
