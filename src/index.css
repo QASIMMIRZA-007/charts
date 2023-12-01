@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.App{
+  height: 100%;
+  width: 100%;
+  /* background: cornflowerblue; */
+  background: #000;
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Martian Mono', monospace;
+font-family: 'Montserrat', sans-serif;
+background: #1C1C1C;
+
+}
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right{
+  position: relative;
+  right: 63px;
+  top: 9px;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+/* .App .App-header{
+  display: flex;
+padding:  10px;
+
+}
+
+ul li{
+  list-style: none;
+  text-decoration: none;
+  margin: 10px;
+}
+ul li a{
+  text-decoration: none;
+}
+#about{
+  background: #4b4949;
+  color: #fff;
+  height: 100vh;
+
+} */
+.container{
+  /* color: #fff; */
+  /* margin-top: 5rem; */
+  /* border: 1px solid #eee; */
+  background: #1C1C1C;
+  /* height: 600px; */
+}
+h3{
+ padding-top: 8px;
+}
+.recharts-wrapper{
+  height: 169px !important;
+}
+.text{
+  margin-left: 120px;
+  top: 5px;
+}
+p{
+  position: relative;
+    right: 28px;
+    font-size: 11px;
+}
+.recharts-surface{
+  height: 169px !important;
+  /* background-color: #fff; */
+}
+.sidebar-flex{
+  position: relative;
+  bottom: 38px;
+
+}
