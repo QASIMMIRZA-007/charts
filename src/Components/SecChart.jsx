@@ -1,5 +1,4 @@
 /* eslint-disable no-shadow */
-import { parseCookie } from 'next/dist/compiled/@edge-runtime/cookies';
 import React, { PureComponent } from 'react';
 import { PieChart, Pie, Cell } from 'recharts';
 
