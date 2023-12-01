@@ -6,6 +6,8 @@ import PieNeedleChart from './Components/PieNeedleChart'
 import SecChart from './Components/SecChart'
 import SecblueChart from './Components/SecblueChart'
 
+import GaugeCharts from "./Components/GaugeCharts";
+
 function App() {
   const [solarData, setSolarData] = useState({
     labels: UserData.map((data) => data.year),
@@ -52,7 +54,7 @@ function App() {
           <div className="sidebar">
             <div className="sidebar-flex">
             <PieNeedleChart/>
-            {/* <PieChart/> */}
+         
             <SecChart/>
             <SecblueChart/>
             </div>
@@ -60,6 +62,8 @@ function App() {
         </div>
       </div>
    
+
+    {/* <GaugeCharts/> */}
     </div>
   );
 }
