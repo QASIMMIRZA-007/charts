@@ -67,7 +67,7 @@ const Example = () => {
       </PieChart>
       <div className="text">
         <h3>79.24%</h3>
-        <p>Self consumed  energy</p>
+        <p>Self consumed energy</p>
       </div>
     </>
   );

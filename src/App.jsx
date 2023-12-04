@@ -5,6 +5,7 @@ import { UserData, energyData } from "./Components/Data";
 import PieNeedleChart from "./Components/PieNeedleChart";
 import SecChart from "./Components/SecChart";
 import SecblueChart from "./Components/SecblueChart";
+import About from "./Components/About";
 
 // import GaugeCharts from "./Components/GaugeCharts";
 
@@ -62,6 +63,7 @@ function App() {
       </div>
 
       {/* <GaugeCharts/> */}
+      {/* <About/> */}
     </div>
   );
 }

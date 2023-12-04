@@ -4,7 +4,7 @@ export const UserData = [
         year: 0.00,
         userGain: 0,
         userLost: 23,
-      },
+    },
       {
         id: 1,
         year: 1.00,
@@ -148,6 +148,7 @@ export const UserData = [
       },
     
   ];
+
   export const energyData = [
     {
         id: 0,

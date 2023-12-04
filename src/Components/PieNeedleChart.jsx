@@ -1,12 +1,13 @@
-
-import React from 'react';
-import { PieChart, Pie, Cell } from 'recharts';
+import { Toast } from "bootstrap";
+import React from "react";
+import { PieChart, Pie, Cell } from "recharts";
 
 const RADIAN = Math.PI / 180;
+
 const data = [
-  { name: 'A', value: 80, color: '#B83C1D' },
-  { name: 'B', value: 45, color: '#BD9500' },
-  { name: 'C', value: 25, color: '#0C7E29' },
+  { name: "A", value: 80, color: "#B83C1D" },
+  { name: "B", value: 45, color: "#BD9500" },
+  { name: "C", value: 25, color: "#0C7E29" },
 ];
 const cx = 150;
 const cy = 200;
@@ -15,10 +16,11 @@ const oR = 90;
 const value = 50;
 
 const needle = (value, data, cx, cy, iR, oR, color) => {
-  let total = 0;
+  let total = 10;
   data.forEach((v) => {
     total += v.value;
   });
+ 
   const ang = 180.0 * (1 - value / total);
   const length = (iR + 2 * oR) / 3;
   const sin = Math.sin(-RADIAN * ang);
@@ -44,11 +46,11 @@ const needle = (value, data, cx, cy, iR, oR, color) => {
   ];
 };
 
-const Example = () => {
+const Example = () => { 
   return (
     <>
       <PieChart width={400} height={200}>
-        <Pie
+    <Pie
           dataKey="value"
           startAngle={180}
           endAngle={0}
@@ -59,12 +61,12 @@ const Example = () => {
           outerRadius={oR}
           fill="#8884d8"
           stroke="none"
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={entry.color} />
+        > 
+          {data.map((entry , index)=> (
+            <Cell key={`cell-${index}`} fill={entry.color}/>
           ))}
         </Pie>
-        {needle(value, data, cx, cy, iR, oR, '#d0d000')}
+        {needle(value, data, cx, cy, iR, oR, "#BD9")}
       </PieChart>
       <div className="text">
         <h3>45.06 kWh</h3>
@@ -74,5 +76,5 @@ const Example = () => {
   );
 };
 
-export default Example;
+export default Example  
 

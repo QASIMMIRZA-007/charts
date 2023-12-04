@@ -14,14 +14,14 @@ const iR = 50;
 const oR = 80;
 const value = 50;
 
-const needle = (value, data, cx, cy, iR, oR, color) => {
+const needle = (value, data, cx,cy, iR, oR, color) => {
   let total = 0;
   data.forEach((v) => {
     total += v.value;
   });
   const ang = 180.0 * (1 - value / total);
   const length = (iR + 2 * oR) / 3;
-  const sin = Math.sin(-RADIAN * ang);
+const sin =  Math.sin(-RADIAN * ang);
   const cos = Math.cos(-RADIAN * ang);
   const r = 5;
   const x0 = cx + 5;
@@ -34,11 +34,11 @@ const needle = (value, data, cx, cy, iR, oR, color) => {
   const yp = y0 + length * sin;
 
   return [
-    <circle cx={x0} cy={y0} r={r} fill={color} stroke="none" key="circle" />,
+    <circle cx={x0} cy={y0} r={r} fill={color} stroke="none" key="circle"/>,
     <path
       d={`M${xba} ${yba}L${xbb} ${ybb} L${xp} ${yp} L${xba} ${yba}`}
       stroke="#none"
-      fill={color}
+     fill={color}
       key="path"
     />,
   ];
