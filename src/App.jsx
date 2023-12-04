@@ -6,7 +6,7 @@ import PieNeedleChart from "./Components/PieNeedleChart";
 import SecChart from "./Components/SecChart";
 import SecblueChart from "./Components/SecblueChart";
 
-import GaugeCharts from "./Components/GaugeCharts";
+// import GaugeCharts from "./Components/GaugeCharts";
 
 function App() {
   const [solarData, setSolarData] = useState({
@@ -39,13 +39,13 @@ function App() {
         <div className="left">
           <div className="container">
             <h3>Energy </h3>
-            <div style={{ width: 964 , height: 482 }}>
+            <div style={{ width: 864 , height: 482 }}>
               <BarChart chartData={energyChartData} />
             </div>
           </div>
           <div className="container">
             <h3>Solar Production</h3>
-            <div style={{ width: 964 , height: 482 }}>
+            <div style={{ width: 864 , height: 482 }}>
               <BarChart chartData={solarData} />
             </div>
           </div>
