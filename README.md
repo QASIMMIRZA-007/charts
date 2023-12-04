@@ -26,3 +26,25 @@ Currently, two official plugins are available:
       //     </Routes>
       //   </div>
       // </Router>
+
+
+      /* .App .App-header{
+  display: flex;
+padding:  10px;
+
+}
+
+ul li{
+  list-style: none;
+  text-decoration: none;
+  margin: 10px;
+}
+ul li a{
+  text-decoration: none;
+}
+#about{
+  background: #4b4949;
+  color: #fff;
+  height: 100vh;
+
+} */
