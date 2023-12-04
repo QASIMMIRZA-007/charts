@@ -50,7 +50,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="right">
+      <div className="right">
           <div className="sidebar">
             <div className="sidebar-flex">
               <PieNeedleChart />
