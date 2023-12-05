@@ -76,18 +76,15 @@
 // export default Example;
 import React, { Component } from "react";
 import { render } from "react-dom";
-import './app.css'
-
-
+import "./app.css";
 
 import GaugeChart from "react-gauge-chart";
 
-export  default class App extends Component {
+export default class App extends Component {
   constructor() {
     super();
     this.state = {
       name: "React",
-    
     };
   }
 
@@ -99,15 +96,14 @@ export  default class App extends Component {
           nrOfLevels={1}
           colors={["#BD9500"]}
           arcWidth={0.3}
-          
           percent={0.79}
-          textColor={'green'}
+          textColor={"#BD9500"}
           // hideText={true} // If you want to hide the text
         />
-         <div className="text">
-                   <h3>79.24%</h3>
-        <p>Self consumed energy</p>
-      </div>
+        <div className="text">
+          <h3 className="secHeading">79.24%</h3>
+          <p className="secPara">Self consumed energy</p>
+        </div>
       </div>
     );
   }

@@ -46,23 +46,45 @@ h1 {
   left: 15px;
 }
 
-h2 {
-  margin-left: 6px;
-}
 
-.text {
-  margin-left: 67px;
+.last-text{
+  
   position: relative;
   bottom: 61px;
 }
+
+.text {
+  margin-left: 59px;
+  position: relative;
+  bottom: 61px;
+}
+.pie-heading{
+  margin-left: 56px;
+}
+.pie-para{
+  margin-left: 2px;
+}
+.secHeading{
+  margin-left: 58px;
+}
+.secPara{
+  margin-left: 4px;
+}
+.blue-heading{
+  margin-left: 60px;
+}
+.blue-para{
+  margin-left: 25px;
+}
+
 
 .sidebar {
   position: relative !important;
 }
 
-h3 {
+/* h3 {
   width: fit-content;
   font-size: 18px;
   text-align: center;
   margin-left: 44px;
-}
+} */

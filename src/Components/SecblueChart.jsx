@@ -103,8 +103,8 @@ export  default class App extends Component {
           // hideText={true} // If you want to hide the text
         />
          <div className="text">
-         <h3>66.37%</h3>
-         <p>Non-fossil  energy</p>
+         <h3 className="blue-heading">66.37%</h3>
+         <p className="blue-para">Non-fossil  energy</p>
      </div>
       </div>
     );

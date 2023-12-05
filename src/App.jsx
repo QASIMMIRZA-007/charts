@@ -40,7 +40,7 @@ function App() {
         <div className="left">
           <div className="container">
             <h2>Energy </h2>
-            <div style={{ width: 864}}>
+            <div style={{ width: 864 }}>
               <BarChart chartData={energyChartData} />
             </div>
           </div>
@@ -51,7 +51,7 @@ function App() {
             </div>
           </div>
         </div>
-      <div className="right">
+        <div className="right">
           <div className="sidebar">
             <div className="sidebar-flex">
               <PieNeedleChart />
