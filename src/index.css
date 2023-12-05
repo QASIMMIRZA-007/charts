@@ -14,71 +14,55 @@
   font-family: "Martian Mono", monospace;
   font-family: "Montserrat", sans-serif;
   background: #1c1c1c;
-
 }
 .main-container {
-  display: flex;                      
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  /* justify-content: center; */
   padding-top: 30px;
 }
-/* .right {
-  position: relative;
-  right: 63px;
-  top: 9px;
-} */
+
 ::-webkit-scrollbar {
   display: none;
 }
+.sidebar-flex {
+  position: relative;
+  top: 30px;
+}
+h1 {
+  font-size: 19px;
+  margin-top: 40px;
+}
+.sidebar-flex{
+  position: relative;
+  top: 37px;
+}
+
 
 .container {
-  /* color: #fff; */
-  /* margin-top: 5rem; */
-  /* border: 1px solid #eee; */
   background: #1c1c1c;
-  height: 526px;
- 
+
+  position: relative;
+  left: 15px;
 }
 
-.recharts-wrapper {
-  height: 169px !important;
-  width: 200px !important;
+h2 {
+  margin-left: 6px;
 }
+
 .text {
-  margin-left:  30px;
+  margin-left: 67px;
   position: relative;
-  bottom: 20px;
- 
-  /* display: none; */
+  bottom: 61px;
 }
-/* p {
-  position: relative;
-  right: 28px;
-  font-size: 11px;
-} */
-.recharts-surface {
-  height: 169px !important;
-  width: 200px !important;
-  /* background-color: #fff; */
-}
-.sidebar{
-  position: relative;
-  bottom: 270px;
-  left: 70px;
-}
-/* .sidebar-flex {
-  position: relative;
-  bottom: 38px;
-} */
 
-h3{
-  width: fit-content;
-  font-size: 12px;
-  text-align: center;
-  margin-left: 25px;
+.sidebar {
+  position: relative !important;
 }
-  p{
-    width: fit-content;
-    font-size: 11px;
-    text-align: center;
-  }
+
+h3 {
+  width: fit-content;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 44px;
+}

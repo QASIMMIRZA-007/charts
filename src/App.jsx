@@ -39,14 +39,14 @@ function App() {
       <div className="main-container">
         <div className="left">
           <div className="container">
-            <h3>Energy </h3>
-            <div style={{ width: 864 , height: 482 }}>
+            <h2>Energy </h2>
+            <div style={{ width: 864}}>
               <BarChart chartData={energyChartData} />
             </div>
           </div>
           <div className="container">
-            <h3>Solar Production</h3>
-            <div style={{ width: 864 , height: 482 }}>
+            <h1>Solar Production</h1>
+            <div style={{ width: 864 }}>
               <BarChart chartData={solarData} />
             </div>
           </div>

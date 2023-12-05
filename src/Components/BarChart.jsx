@@ -10,14 +10,8 @@ function BarChart({ chartData }) {
                 min:1,
                 max: 14,           
                 ticks: {
-                  stepSize: 2, 
-                //   callback: function (value, index, values) {
-                //     // Return an empty string for values between 4 and 11
-                //     if (value >= 4 && value <= 11) {
-                //       return "";
-                //     }
-                //     return value;
-                //   },     
+                  stepSize: 2,
+                   
                 },
                 grid: {
                     color: "#4b4949",

@@ -1,0 +1,27 @@
+#root #gauge-chart3 svg .needle {
+    display: none;
+  
+  }
+  #root #gauge-chart svg .needle {
+    fill: #0A7E29;
+  
+  }
+  #root #gauge-chart3{
+    height: 179px;
+  }
+  #root #gauge-chart{
+    height: 179px;
+  }
+  /* app.css */
+#root #gauge-chart3 svg .arc path:nth-child(1) {
+    fill: #0A7E29; /* Color for segment A */
+  }
+  
+  #root #gauge-chart3 svg .arc path:nth-child(2) {
+    fill: #0A0A0A; /* Color for segment B */
+  }
+  
+  #root #gauge-chart3 svg .arc path:nth-child(3) {
+    fill: #0000FF; /* Color for segment C */
+  }
+  

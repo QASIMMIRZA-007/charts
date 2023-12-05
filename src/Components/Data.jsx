@@ -3,7 +3,8 @@ export const UserData = [
         id: 0,
         year: 0.00,
         userGain: 0,
-        userLost: 23,
+        // userLost:  Math.floor((Math.random() * 10)),
+        userLost:0,
     },
       {
         id: 1,
